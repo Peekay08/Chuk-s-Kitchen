@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #FF7A18;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+nav a {
+  margin: 0 50px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.login-btn {
+  background: #FF7A18;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero{
+height:320px;
+background:url('../assets/images/menu.png') center/cover no-repeat;
+position:relative;
+display:flex;
+align-items:flex-end;
+padding:50px 60px;
+color:#fff;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+}
+
+.hero h1{
+font-size:34px;
+margin-bottom:8px;
+}
+
+.container{
+padding:40px 60px;
+}
+
+.categories{
+background:#fff;
+border-radius:8px;
+padding:20px;
+margin-bottom:40px;
+}
+
+.categories h3{
+margin-bottom:10px;
+}
+
+.categories ul{
+list-style:none;
+}
+
+.categories li{
+padding:12px;
+border-radius:5px;
+margin-bottom:4px;
+}
+
+.categories li.active{
+background:#fde8d6;
+color:#FF7A18;
+font-weight:600;
+}
+
+.section{
+margin-bottom:50px;
+}
+
+.section h2{
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+gap:25px;
+}
+
+.card{
+background:#fff;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+display:flex;
+flex-direction:column;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-body{
+padding:15px;
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+.card-body h4{
+margin-bottom:6px;
+font-size:16px;
+}
+
+.card-body p{
+font-size:13px;
+color:#777;
+margin-bottom:10px;
+}
+
+.card-footer{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:auto;
+}
+
+.price{
+color:#FF7A18;
+font-weight:600;
+}
+
+.add-btn{
+width:28px;
+height:28px;
+background:#FF7A18;
+color:#fff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+cursor:pointer;
+}
+
+.footer {
+  background: #6b4226;
+  color: white;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.info h3 {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #FF7A18;
+}
+
+.info p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10px;
+  width: 140px;
+  margin-bottom: 5px;
+}
+
+.info a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+
+.foot p {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  width: 140px;
+}
+
+.copyright {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10px;
+  padding-left: 100px;
+  padding-bottom: 40px;
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 90px;
+  background: #0081FE;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.view-all {
+  display: none;
+  cursor: pointer;
+  color: #1e88e5;
+  font-size: 13px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav,
+  .login-btn {
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  nav.active a {
+    margin: 10px 0;
+  }
+
+  .login-btn.active {
+    display: block;
+    position: absolute;
+    top: 250px;
+    right: 30px;
+    width: 220px;
+  }
+
+  .navbar {
+    padding: 15px 30px;
+    position: relative;
+  }
+
+  .hero {
+    height: 280px;
+    padding: 40px 30px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .categories {
+    padding: 18px;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav,
+  .login-btn {
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    width: 220px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  nav.active a {
+    margin: 10px 0;
+  }
+
+  .login-btn.active {
+    display: block;
+    position: absolute;
+    top: 230px;
+    right: 20px;
+    width: 220px;
+  }
+
+  .navbar {
+    position: relative;
+    padding: 15px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    flex-direction: row;
+    height: 110px;
+    border-radius: 8px;
+  }
+
+  .card img {
+    width: 110px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-body h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .card-body p {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .card-footer {
+    margin-top: 4px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .add-btn {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+  }
+
+  .section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .view-all {
+    display: block;
+    color: #1e88e5;
+    font-size: 13px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .hero {
+    height: 250px;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+   .section:first-of-type .card:nth-child(n+4) {
+    display: none;
+  }
+
+}
