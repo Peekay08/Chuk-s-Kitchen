@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background:#f5f6f8;
+}
+
+.main{
+    display:flex;
+    height:100vh;
+}
+
+.left{
+    width:50%;
+    position:relative;
+    background:url('../assets/images/signup.png') center/cover no-repeat;
+}
+
+.left::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(249,115,22,0.85);
+}
+
+.left-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    text-align:center;
+    width:70%;
+    z-index:2;
+}
+
+.left-content h1{
+    font-size:40px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.left-content p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.right{
+    width: 50%;
+    background: #f7f9fc;
+    padding: 50px 40px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.right-content {
+    width: 100%;
+    max-width: 450px;
+}
+
+.logo{
+    font-family: "Island Moments", cursive;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 30px;
+    color:#f97316;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.right h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-weight:600;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.blue {
+    color: #0081FE;
+}
+
+label{
+    font-size:14px;
+    display:block;
+    margin-bottom:6px;
+    color:#444;
+}
+
+.input-wrapper{
+    position:relative;
+}
+
+.input-wrapper i{
+    position:absolute;
+    left:12px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:14px;
+    color:#888;
+}
+
+input{
+    width:100%;
+    padding:12px 12px 12px 38px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    outline:none;
+    font-size:14px;
+    background:white;
+}
+
+input:focus{
+    border:2px solid #3b82f6;
+}
+
+.toggle{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:14px;
+    color:#666;
+}
+
+.terms{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    margin:15px 0;
+}
+
+.label {
+    display: flex;
+    width: 100%;
+}
+
+.label input {
+    flex: 0.5;
+}
+
+.label span {
+    flex: 9.5;
+}
+
+.primary-btn{
+    width:100%;
+    padding:14px;
+    background:#f97316;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+.divider{
+    text-align:center;
+    margin:10px 0 15px;
+    font-size:13px;
+    color:#666;
+}
+
+.social-btn{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    background:white;
+    border-radius:8px;
+    margin-bottom:10px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.social-btn:hover{
+    background:#f3f4f6;
+}
+
+.signin{
+    text-align:center;
+    font-size:14px;
+    margin-top:10px;
+}
+
+.signin a{
+    color:#3b82f6;
+    text-decoration:none;
+}
+
+
+.footer {
+  background: #6b4226;
+  color: white;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.info h3 {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #FF7A18;
+}
+
+.info p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10px;
+  width: 140px;
+  margin-bottom: 5px;
+}
+
+.info a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+
+.foot p {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  width: 140px;
+}
+
+.copyright {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 90px;
+  background: #0081FE;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        padding: 80px 20px;
+        height: auto;
+    }
+
+    .right-content {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .right {
+        padding: 60px 20px;
+    }
+
+    .right-content {
+        max-width: 100%;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .right h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+
+    .primary-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .info p,
+    .foot p {
+        width: 100%;
+    }
+
+    .copyright {
+        padding-left: 20px;
+    }
+
+    .up-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        top: auto;
+    }
+}
