@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuks Kitchen</title>
+  <link rel="stylesheet" href="css/details.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Island+Moments&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Chuks Kitchen</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Explore</a>
+      <a href="#">My Orders</a>
+      <a href="#">Account</a>
+    </nav>
+    <button class="login-btn">Login</button>
+    <button class="hamburger">&#9776;</button>
+  </header>
+
+  <main class="main-layout">
+
+    <div class="left-image">
+      <img src="assets/images/details.png" alt="Jollof Rice">
+    </div>
+
+    <div class="right-content">
+      <div class="product-card">
+        <button class="close-btn">x</button>
+
+        <h2>Jollof Rice with Fried Chicken</h2>
+        <p class="price">₦2,800</p>
+
+        <p class="description">
+          Our signature Jollof rice, cooked to perfection with aromatic spices,
+          served with juicy golden-fried chicken. A classic Nigerian comfort food,
+          rich in flavor and satisfying. Perfect for a quick lunch or a hearty diner.
+        </p>
+
+        <div class="tags">
+          <span class="grey"><img src="assets/svg/stopwatch.svg" alt="Stopwatch Icon" width="11.5"> Mildly spicy</span>
+          <span class="grey"><img src="assets/svg/stopwatch.svg" alt="Stopwatch Icon" width="11.5"> Vegetarian option available</span>
+          <span class="blue"><img src="assets/svg/stopwatch.svg" alt="Stopwatch Icon" width="11.5"> View Allergies</span>
+        </div>
+
+        <h4>Choose Your Protein</h4>
+
+        <div class="option">
+          <label class="doughnut-radio"><input type="radio" name="choice"><span class="custom"></span><span class="text">Fried Chicken</span></label>
+          <span>(Default)</span>
+        </div>
+
+        <div class="option">
+          <label class="doughnut-radio"><input type="radio" name="choice"><span class="custom"></span><span class="text">Grilled Fish</span></label>
+          <span>+₦500</span>
+        </div>
+
+        <div class="option">
+          <label class="doughnut-radio"><input type="radio" name="choice"><span class="custom"></span><span class="text">Beef</span></label>
+          <span>+₦700</span>
+        </div>
+
+        <h4>Extra Sides (Optional)</h4>
+
+        <div class="option">
+          <label><input type="checkbox"> Fried Plantain</label>
+          <span>+₦700</span>
+        </div>
+
+        <div class="option">
+          <label><input type="checkbox"> Coleslaw</label>
+          <span>+₦500</span>
+        </div>
+
+        <div class="option">
+          <label><input type="checkbox"> Extra Pepper Sauce</label>
+          <span>+₦300</span>
+        </div>
+
+        <h4>Special Instructions</h4>
+        <textarea placeholder="E.g no onion, food is too spicy, food is too hot hhhhhhhhh"></textarea>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="info">
+      <div class="foot">
+        <h3>Chuks Kitchen</h3>
+        <p>
+          Bringing the authentic flavors of Nigerian home cooking to your table,
+          with passion and care.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#">Home</a></p>
+        <p><a href="#">Explore</a></p>
+        <p><a href="#">My Orders</a></p>
+        <p><a href="#">Account</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <p>+234 801 234 5678</p>
+        <p>hello@chukskitchen.com</p>
+        <p>123 Tasta Blvd, Lagos, Nigeria</p>
+      </div>
+
+      <div>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Linkedin</p>
+        <p>Instagram</p>
+      </div>
+    </div>
+
+    <p class="copyright">© 2026 Chuks Kitchen. All rights reserved.</p>
+
+    <button class="up-btn">&#8593</button>
+</footer>
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector(".navbar nav");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+</body>
+</html>
