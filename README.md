@@ -1,5 +1,5 @@
 # Chuks Kitchen -- Food Ordering Web Interface
-https://peekay08.github.io/Chuk-s-Kitchen/
+https://promisechukskitchen.netlify.app
 
 Frontend Implementation Documentation
 
